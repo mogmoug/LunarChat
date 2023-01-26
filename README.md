@@ -1,6 +1,7 @@
-# Tauri + Vanilla
+# LunarChat
 
-This template should help get you started developing with Tauri in vanilla HTML, CSS and Javascript.
+月蚀 —— 要代替QQ的聊天软件   
+> 使用**Tauri**构建
 
 ## Recommended IDE Setup
 

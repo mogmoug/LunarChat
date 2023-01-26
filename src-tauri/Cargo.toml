@@ -1,10 +1,10 @@
 [package]
-name = "LunarChat"
-version = "0.0.0"
-description = "A Tauri App"
-authors = ["you"]
-license = ""
-repository = ""
+name = "lunar_chat"
+version = "0.0.1"
+description = "Alternatives to QQ"
+authors = ["Mogmoug <mogmoug123@outlook.com>"]
+license = "MIT"
+repository = "https://github.com/mogmoug/LunarChat"
 edition = "2021"
 rust-version = "1.57"
 

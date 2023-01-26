@@ -1,48 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tauri App</title>
-    <script type="module" src="/main.js" defer></script>
-    <style>
-      .logo.vanilla:hover {
-        filter: drop-shadow(0 0 2em #ffe21c);
-      }
-    </style>
-  </head>
+<html>
 
-  <body>
-    <div class="container">
-      <h1>Welcome to Tauri!</h1>
+<head>
+  <title>LunarChat</title>
+  <link href="./css/style.css" rel="stylesheet" type="text/css" />
+</head>
 
-      <div class="row">
-        <a href="https://tauri.app" target="_blank">
-          <img src="/assets/tauri.svg" class="logo tauri" alt="Tauri logo" />
-        </a>
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-          target="_blank"
-        >
-          <img
-            src="/assets/javascript.svg"
-            class="logo vanilla"
-            alt="JavaScript logo"
-          />
-        </a>
-      </div>
-
-      <p>Click on the Tauri logo to learn more about the framework</p>
-
-      <div class="row">
-        <div>
-          <input id="greet-input" placeholder="Enter a name..." />
-          <button id="greet-button" type="button">Greet</button>
-        </div>
-      </div>
-
-      <p id="greet-msg"></p>
+<body>
+  <div class="window">
+    <div id="left-buttons">
+      <img src="./assets/forum.svg" id="top_button">
+      <img src="./assets/people.svg" id="top_button">
+      <img src="./assets/tauri.svg" id="top_button">
+      <img src="./assets/info.svg" id="down_button">
     </div>
-  </body>
+    <div class="groups">
+    </div>
+    <div class="chat-ui">
+      <div id="messages">
+      </div>
+      <div class="input">
+        <textarea id="msg-input" placeholder="开始聊天吧"></textarea>
+        <button id="send" onclick="send()">发送</button>
+      </div>
+    </div>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+
 </html>

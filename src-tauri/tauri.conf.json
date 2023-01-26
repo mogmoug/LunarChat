@@ -8,7 +8,7 @@
   },
   "package": {
     "productName": "LunarChat",
-    "version": "0.0.0"
+    "version": "0.0.2"
   },
   "tauri": {
     "allowlist": {
@@ -33,7 +33,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "com.mogmoug.lunarchat",
       "longDescription": "",
       "macOS": {
         "entitlements": null,

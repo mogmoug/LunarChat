@@ -1,9 +1,6 @@
-try {
-    const { invoke } = window.__TAURI__.tauri;
-} catch (e) {
-    console.error("not is tauri runtime");
-}
+const { invoke } = window.__TAURI__.tauri;
 console.log(navigator.userAgent);
+invoke("system_exec",{command:"pwd",args:""});
 
 let message_strings = [];
 
@@ -17,7 +14,7 @@ function send() {
     message_strings.push(document.getElementById("msg-input").value);
     let str = "";
     for (let i = 0; i < message_strings.length; i++) {
-        str += message_strings[i] + "\n";
+        str += "<p>"+message_strings[i]+"</p>" + "\n";
     }
-    document.getElementById("messages").innerText = str;
+    document.getElementById("messages").innerHTML = str;
 }

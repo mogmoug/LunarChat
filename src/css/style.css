@@ -7,11 +7,22 @@ body {
 }
 
 #messages {
-  width: 90%;
+  width: 100%;
   height: 80%;
-  text-align: right;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
 }
 
+#messages > p {
+  margin-bottom: 2px;
+  margin-top: 2px;
+  margin-left: auto;
+  align-self: auto;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(250, 250, 250);
+}
 
 .window {
   width: 100%;
@@ -43,7 +54,6 @@ body {
   flex-grow: 1;
   flex-direction: column;
   border: 1px solid #ccc;
-  padding: 10px;
 }
 
 #msg-input {

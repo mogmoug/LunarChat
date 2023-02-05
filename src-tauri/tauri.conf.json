@@ -20,10 +20,10 @@
     },
     "bundle": {
       "active": true,
-      "category": "DeveloperTool",
-      "copyright": "",
+      "category": "Utility",
+      "copyright": "MIT",
       "deb": {
-        "depends": []
+        "depends": ["libwebkit2gtk-4.0","libgtk-3"]
       },
       "externalBin": [],
       "icon": [

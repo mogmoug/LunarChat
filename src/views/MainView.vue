@@ -1,5 +1,5 @@
 <script setup>
-import GroupsList from './GroupsList.vue';
+import GroupsList from '../components/GroupsList.vue';
 import ChatView from './ChatView.vue';
 </script>
 <template>

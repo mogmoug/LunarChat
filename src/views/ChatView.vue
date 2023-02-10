@@ -7,7 +7,7 @@
 </template>
 <style>
 #messages {
-
+    background-color: cornsilk;
 }
 #input {
     resize: none;

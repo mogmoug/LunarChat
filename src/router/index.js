@@ -1,16 +1,22 @@
 import { createRouter, createWebHistory } from "vue-router"
-import Main from "../views/Main.vue"
-import Peoples from "../views/Peoples.vue"
+import MainView from "../views/MainView.vue"
+import PeoplesView from "../views/PeoplesView.vue"
+import AboutView from "../views/AboutView.vue"
 const routes = [
     {
         path: '/main',
         name: 'main',
-        component: Main
+        component: MainView
     },
     {
         path: '/peoples',
         name: 'peoples',
-        component: Peoples
+        component: PeoplesView
+    },
+    {
+        path: '/about',
+        name: 'about',
+        component: AboutView
     }
 ]
 const router = createRouter({

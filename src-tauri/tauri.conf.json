@@ -14,13 +14,26 @@
     "allowlist": {
       "all": false,
       "shell": {
-        "all": false,
-        "open": true
+        "all": true,
+        "execute": false,
+        "open": false,
+        "scope": [],
+        "sidecar": false
       },
       "dialog": {
         "all": true,
+        "ask": true,
+        "confirm": true,
+        "message": true,
         "open": true,
         "save": true
+      },
+      "window" :{
+        "all": true,
+        "setTitle": true,
+        "show": true,
+        "startDragging": true,
+        "setDecorations": true
       }
     },
     "bundle": {
@@ -68,7 +81,8 @@
         "height": 600,
         "resizable": true,
         "title": "LunarChat",
-        "width": 800
+        "width": 800,
+        "decorations": false
       }
     ]
   }

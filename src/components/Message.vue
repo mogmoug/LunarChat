@@ -1,13 +1,20 @@
-<template lang="">
-    <div>
-        
+<template>
+    <div id="message-view">
+        <p>{{ message }}</p>
     </div>
 </template>
-<script>
-export default {
-    
-}
+<script setup>
+const props = defineProps(["message","id"])
+const message = props.message;
 </script>
-<style lang="">
-    
+<style>
+#message-view p {
+    margin: 4px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 4px;
+    border-color: black;
+    border-width: 1px;
+    border-style:solid;
+    text-align: left;
+}
 </style>

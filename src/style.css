@@ -5,7 +5,6 @@
   font-weight: 400;
 
   color: #0f0f0f;
-  background-color: #f6f6f6;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -21,20 +20,6 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: 0.75s;
-}
-
-
-
-.row {
-  display: flex;
-  justify-content: center;
 }
 
 a {
@@ -55,8 +40,6 @@ input,
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
   font-weight: 500;
   font-family: inherit;
   color: #000000;
@@ -71,15 +54,6 @@ button {
 
 button:hover {
   border-color: #396cd8;
-}
-
-input,
-button {
-  outline: none;
-}
-
-#greet-input {
-  margin-right: 5px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -97,4 +71,48 @@ button {
     color: #ffffff;
     background-color: #0f0f0f98;
   }
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+#main-ui {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+
+.ui {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#side-router {
+  width: 80px;
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#side-router img {
+  width: 50px;
+  height: 50px;
 }

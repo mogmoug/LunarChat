@@ -14,15 +14,15 @@ import { ref } from 'vue'
 let items = ref([
     {
         id: 114514,
-        message: "Mogmoug"
+        message: "Eric"
     },
     {
         id: 1919810,
-        message: "What"
+        message: "Mary"
     },
     {
         id: 5666,
-        message: "NIHaoo"
+        message: "Steve"
     }
 ])
 

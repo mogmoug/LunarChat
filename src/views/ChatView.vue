@@ -13,7 +13,7 @@ function send(){
                 <Message v-for="msg in messages" :message="msg"></Message>
             </div>
         <div id="input">
-            <textarea id="input-msg"></textarea>
+            <textarea id="input-msg" placeholder="Please entry text"></textarea>
             <input type="button" value="Send" @click="send()" id="send-btn">
         </div>
     </div>
@@ -21,14 +21,12 @@ function send(){
 <style>
 #messages-view {
     width: 100%;
-    height: 80%;
     flex:1;
     overflow-y: auto;
-    overflow-wrap: break-word;
+    overflow-x: visible;
 }
 #chat-view {
     width: 100%;
-    height: 100%;
     background-color: azure;
     display: flex;
     flex-direction: column;

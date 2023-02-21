@@ -1,29 +1,47 @@
 {
   "build": {
-    "beforeDevCommand": "",
-    "beforeBuildCommand": "",
-    "devPath": "../src",
-    "distDir": "../src",
-    "withGlobalTauri": true
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist",
+    "withGlobalTauri": false
   },
   "package": {
     "productName": "LunarChat",
-    "version": "0.0.1"
+    "version": "0.0.2"
   },
   "tauri": {
     "allowlist": {
       "all": false,
       "shell": {
-        "all": false,
-        "open": true
+        "all": true,
+        "execute": false,
+        "open": false,
+        "scope": [],
+        "sidecar": false
+      },
+      "dialog": {
+        "all": true,
+        "ask": true,
+        "confirm": true,
+        "message": true,
+        "open": true,
+        "save": true
+      },
+      "window" :{
+        "all": true,
+        "setTitle": true,
+        "show": true,
+        "startDragging": true,
+        "setDecorations": true
       }
     },
     "bundle": {
       "active": true,
-      "category": "DeveloperTool",
-      "copyright": "",
+      "category": "Utility",
+      "copyright": "MIT",
       "deb": {
-        "depends": []
+        "depends": ["libwebkit2gtk-4.0","libgtk-3"]
       },
       "externalBin": [],
       "icon": [
@@ -33,7 +51,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "org.mogmoug.lunarchat",
+      "identifier": "com.mogmoug.lunarchat",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -63,7 +81,8 @@
         "height": 600,
         "resizable": true,
         "title": "LunarChat",
-        "width": 800
+        "width": 800,
+        "decorations": false
       }
     ]
   }

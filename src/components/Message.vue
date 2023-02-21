@@ -1,20 +1,11 @@
 <template>
-    <div id="message-view">
+    <p id="message-author">{{ author }}</p>
+    <div id="message-text">
         <p>{{ message }}</p>
     </div>
 </template>
 <script setup>
-const props = defineProps(["message","id"])
+const props = defineProps(["message","msg-id","author"])
 const message = props.message;
+const author = props.author;
 </script>
-<style>
-#message-view p {
-    margin: 0px;
-    background-color: rgb(236, 236, 236);
-    border-radius: 4px;
-    border-color: black;
-    border-width: 1px;
-    border-style:solid;
-    text-align: left;
-}
-</style>

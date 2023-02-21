@@ -34,21 +34,3 @@ export default {
     }
 }
 </script>
-<style lang="css">
-#peoples-list {
-    display: flex;
-    flex-direction: column;
-}
-
-#peoples {
-    display: flex;
-    flex-direction: row;
-    border: 1px solid #ececec;
-    padding-right: 10px;
-}
-
-#peoples img {
-    border-radius: 20%;
-    width: 50px;
-}
-</style>

@@ -10,7 +10,7 @@ function send(){
 <template>
     <div id="chat-view">
             <div id="messages-view">
-                <Message v-for="msg in messages" :message="msg"></Message>
+                <Message v-for="msg in messages" :message="msg" author="小黑子"></Message>
             </div>
         <div id="input">
             <textarea id="input-msg" placeholder="Please entry text"></textarea>
@@ -19,33 +19,5 @@ function send(){
     </div>
 </template>
 <style>
-#messages-view {
-    width: 100%;
-    flex:1;
-    overflow-y: auto;
-    overflow-x: visible;
-}
-#chat-view {
-    width: 100%;
-    background-color: azure;
-    display: flex;
-    flex-direction: column;
-}
-
-#input {
-    resize: none;
-    margin-top: auto;
-    display: flex;
-    width: 100%;
-    height: 20%;
-}
-
-#input-msg {
-    width: 90%;
-    resize: none;
-}
-
-#send-btn {
-    width: 10%;
-}
+@import "../css/chat.css";
 </style>

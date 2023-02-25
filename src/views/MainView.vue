@@ -12,7 +12,7 @@ import ChatView from './ChatView.vue';
 #groups-view {
     border: 1px;
     border-color: bisque;
-    width: 40%;
+    width: 30%;
     height: 100%;
 }
 

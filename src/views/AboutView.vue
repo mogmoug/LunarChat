@@ -1,6 +1,6 @@
 <template>
   <div id="about-text">
-    <img src="assets/icon.png">
+    <img src="../assets/icon.png">
     <h1>Hello LunarChat!</h1>
     <button @click="inc">Clicked {{ count }} times.</button>
   </div>

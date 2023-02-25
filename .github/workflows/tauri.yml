@@ -22,3 +22,8 @@ jobs:
       run: npm install
     - name: Build
       run: npm run tauri build
+    # Make build available
+    - uses: actions/upload-artifact@v2
+      with:
+        name: lunar_chat
+        path: src-tauri/target/release/bundle/deb/lunar-chat*.deb

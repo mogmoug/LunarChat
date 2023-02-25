@@ -1,4 +1,4 @@
-name: Tauri
+name: linux
 
 on:
   push:
